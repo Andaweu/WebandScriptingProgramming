@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="assignment1style.css">
+    <!--Nunito Sans font from fonts.google.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <title>Andrew Chester's Website</title>
+</head>
+
+<body>
+    <div id="wrapper">
+    <header id="header">
+        <div class="headerContainer">
+            <div class="navBarTop">
+                <a href="index.html"><img src="Assignment 1/Face Picture.jpg" id="HeaderImg" width="40" height="38"></a>
+                <div class="navBarBottom">
+                    <a href="a1aboutme.html">About me</a>
+                    <a href="a1projects.html">Projects</a>
+                    <a href="a1contactme.html" class="active">Contact Me</a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <div id="contactForm">
+        <h1>Contact Form</h1>
+        <form action="mailto:andrew.chester@ontariotechu.net" method="post" enctype="text/plain">
+            <p>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" name="name" placeholder="Full Name" size="48" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" placeholder="Email Address" size="48" required>
+            </p>
+            <p>
+                <label for="phone-number">Phone:</label>
+                <br>
+                <input type="tel" name="phone-number" pattern="[0-9]{10}" placeholder="Phone Number" size="15">
+            </p>
+            <p>
+                <label for="comments">Comments/Feedback:</label>
+                <br>
+                <textarea name="comments" cols="48" rows="10" required></textarea>
+            </p>
+            <p>
+                <label for="verification">Solve the following equation to verify you are not a robot: <br>8 + 12<br></label>
+
+                <input id="verificationEquation" name="verification" placeholder="Type the value here" required pattern="20" />
+
+            </p>
+                           <!-- var userAnswer = document.getElementById("verificationEquation") -->
+            <p>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset Form" />
+            </p>
+
+        </form>
+        </div>
+    </div>
+    <div class="PageFooter">
+        <footer>
+            <p>This webpage was created by Andrew Chester <br>©2024 <a href=a1contactme.html>contact me</a> at andrew.chester@ontariotechu.net</p>
+        </footer>
+
+</div>
+
+
+</body>
+
+
+</html>
